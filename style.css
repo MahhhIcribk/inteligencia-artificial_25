@@ -1,9 +1,9 @@
 :root{
-    --cor-fundo: #F5E6CC; /* Um bege claro, remetendo a ingredientes */
-    --cor-principal: #D4A373; /* Um tom de marrom claro, como madeira */
-    --cor-secundaria: #FAEDCD; /* Creme */
-    --cor-destaque: #E5986D; /* Laranja queimado, cor de temperos */
-    --cor-texto: #6B4D31; /* Marrom escuro para o texto */
+    --cor-fundo: #8f641a; /* Um bege claro, remetendo a ingredientes */
+    --cor-principal: #a87746; /* Um tom de marrom claro, como madeira */
+    --cor-secundaria: #81521c7e; /* Creme */
+    --cor-destaque: #331b07; /* Laranja queimado, cor de temperos */
+    --cor-texto: #4d2409; /* Marrom escuro para o texto */
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
     /* Adicionando a imagem de fundo */
-    background-image: url('https://images.unsplash.com/photo-1543352632-fca6c0e9a6e1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua 'sua-imagem-culinaria.jpg' pelo caminho da sua imagem */
+    background-image: url('culinaria.jpg');
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
