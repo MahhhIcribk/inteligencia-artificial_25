@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você está na cozinha, prestes a preparar um jantar especial. Qual é o primeiro passo para começar?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Planejar o cardápio e separar todos os ingredientes.",
+                afirmacao: "Sua organização na cozinha garantiu um preparo tranquilo e sem surpresas."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Começar a cozinhar o que parece mais fácil primeiro.",
+                afirmacao: "A espontaneidade na cozinha te levou a descobertas saborosas e inesperadas."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Enquanto prepara o prato principal, você percebe que está faltando um ingrediente chave. O que você faz?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Improvisa com o que tem em casa, buscando um substituto criativo.",
+                afirmacao: "Sua criatividade na cozinha te permitiu transformar um imprevisto em um novo prato delicioso."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Pede para alguém ir ao mercado ou faz uma pausa para comprar o ingrediente.",
+                afirmacao: "Sua dedicação em seguir a receita à risca resultou em um prato fiel à tradição."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "O jantar está quase pronto e você precisa decidir a apresentação do prato. Qual a sua abordagem?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Caprichar na montagem, buscando um visual digno de restaurante.",
+                afirmacao: "Seu cuidado com a estética transformou o jantar em uma experiência visual e gustativa."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Servir de forma simples e focada no sabor, afinal, o que importa é o gosto.",
+                afirmacao: "Você priorizou o sabor e a autenticidade, provando que a simplicidade pode ser o maior trunfo."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Após o jantar, seus convidados elogiam muito um prato específico. Qual a sua reação?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Ficar feliz e compartilhar a receita, incentivando-os a experimentar.",
+                afirmacao: "Sua generosidade em compartilhar seu conhecimento culinário inspirou outros a se aventurarem na cozinha."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Agradecer e guardar o segredo da receita para manter o 'toque especial'.",
+                afirmacao: "Você manteve seu 'segredo de chef', garantindo que seus pratos sejam sempre únicos e especiais."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você decide expandir seus conhecimentos culinários. Qual o próximo passo?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Investir em cursos de culinária e livros de receitas avançadas.",
+                afirmacao: "Sua busca por aprimoramento te levou a dominar novas técnicas e explorar cozinhas do mundo todo."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Experimentar novas receitas por conta própria e aprender com os erros e acertos.",
+                afirmacao: "Sua jornada autodidata na cozinha te transformou em um(a) mestre na arte de experimentar e inovar."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Sua jornada culinária se resume em...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }

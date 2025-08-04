@@ -1,10 +1,9 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+    --cor-fundo: #F5E6CC; /* Um bege claro, remetendo a ingredientes */
+    --cor-principal: #D4A373; /* Um tom de marrom claro, como madeira */
+    --cor-secundaria: #FAEDCD; /* Creme */
+    --cor-destaque: #E5986D; /* Laranja queimado, cor de temperos */
+    --cor-texto: #6B4D31; /* Marrom escuro para o texto */
 }
 
 body {
@@ -14,6 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    /* Adicionando a imagem de fundo */
+    background-image: url('https://images.unsplash.com/photo-1543352632-fca6c0e9a6e1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua 'sua-imagem-culinaria.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
 
 .caixa-principal{
@@ -22,10 +27,17 @@ body {
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para um toque mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
 }
 
 h1{
     color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas, .caixa-alternativas, .caixa-resultado {
+    margin-bottom: 20px;
 }
 
 button {
@@ -33,11 +45,20 @@ button {
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    padding: 15px 25px; /* Aumentei um pouco o padding para botões maiores */
+    transition: background-color 0.3s ease; /* Transição mais suave */
+    cursor: pointer; /* Indica que é clicável */
+    margin: 5px; /* Espaçamento entre os botões */
+    font-size: 1rem; /* Ajuste o tamanho da fonte se necessário */
 }
 
 button:hover{
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: var(--cor-principal); /* Cor de texto que contrasta com o destaque */
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+}
+
+.texto-resultado {
+    font-size: 1.1rem; /* Aumentei o tamanho da fonte do resultado */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
 }
